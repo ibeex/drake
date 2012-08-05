@@ -4,7 +4,10 @@
 # TODO Optimize by moving import inside functions.
 import argparse
 import getpass
-import gtk
+try:
+    import gtk
+except ImportError:
+    pass
 import hashlib
 import math
 import os
